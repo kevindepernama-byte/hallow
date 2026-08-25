@@ -14,7 +14,7 @@ if not os.path.exists(DB_DIR):
 
 # Rate Limiting IP (Max 100x)
 IP_LIMITS = {}
-MAX_LIMIT = 100
+MAX_LIMIT = 10
 
 def cek_dan_update_limit(ip_address):
     if ip_address not in IP_LIMITS:
